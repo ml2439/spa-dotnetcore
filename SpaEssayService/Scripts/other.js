@@ -1,4 +1,4 @@
 ﻿function func() {
-    alert('loaded!');
+    console.log('webpack works');
 }
 module.exports = func;
