@@ -12,6 +12,8 @@ using Microsoft.Extensions.Logging;
 using SpaEssayService.Data;
 using SpaEssayService.Models;
 using SpaEssayService.Services;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Rewrite;
 
 namespace SpaEssayService
 {
@@ -39,6 +41,13 @@ namespace SpaEssayService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // require SSL(Secure Sockets Layer) 
+            // a security tech for establishing an encrypted link between a web server and a browser
+            services.Configure<MvcOptions>(options =>
+            {
+                options.Filters.Add(new RequireHttpsAttribute());
+            });
+
             // Add framework services.
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
@@ -59,6 +68,11 @@ namespace SpaEssayService
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+
+            // redirects all HTTP requests to HTTPS
+            var options = new RewriteOptions()
+                .AddRedirectToHttps();
+            app.UseRewriter(options);
 
             if (env.IsDevelopment())
             {

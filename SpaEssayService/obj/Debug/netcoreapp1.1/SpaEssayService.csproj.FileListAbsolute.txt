@@ -4,7 +4,7 @@ D:\Programs\SpaEssayService\SpaEssayService\bin\Debug\netcoreapp1.1\SpaEssayServ
 D:\Programs\SpaEssayService\SpaEssayService\bin\Debug\netcoreapp1.1\SpaEssayService.dll
 D:\Programs\SpaEssayService\SpaEssayService\bin\Debug\netcoreapp1.1\SpaEssayService.pdb
 D:\Programs\SpaEssayService\SpaEssayService\obj\Debug\netcoreapp1.1\SpaEssayService.csprojResolveAssemblyReference.cache
-D:\Programs\SpaEssayService\SpaEssayService\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs
 D:\Programs\SpaEssayService\SpaEssayService\obj\Debug\netcoreapp1.1\SpaEssayService.AssemblyInfo.cs
 D:\Programs\SpaEssayService\SpaEssayService\obj\Debug\netcoreapp1.1\SpaEssayService.dll
 D:\Programs\SpaEssayService\SpaEssayService\obj\Debug\netcoreapp1.1\SpaEssayService.pdb
+D:\Programs\SpaEssayService\SpaEssayService\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs
